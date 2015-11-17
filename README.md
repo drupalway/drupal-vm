@@ -65,7 +65,7 @@ Note on versions: *Please make sure you're running the latest stable version of 
 ### 2 - Build the Virtual Machine
 
   1. Download this project and put it wherever you want.
-  2. Make copies of both of the `example.*` files, and modify to your liking:
+  2. Make copies of both of the `example.*` files, and modify to your liking(can be done via executing prepare.sh script from this folder):
     - Copy `example.drupal.make.yml` to `drupal.make.yml`.
     - Copy `example.config.yml` to `config.yml`.
   3. Create a local directory where Drupal will be installed and configure the path to that directory in `config.yml` (`local_path`, inside `vagrant_synced_folders`).
