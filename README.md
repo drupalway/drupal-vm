@@ -72,6 +72,7 @@ Note on versions: *Please make sure you're running the latest stable version of 
   4. Open Terminal, cd to this directory (containing the `Vagrantfile` and this README file).
   5. (If you have Ansible installed on Mac/Linux) Run `$ sudo ansible-galaxy install -r provisioning/requirements.yml --force`.
   6. Type in `vagrant up`, and let Vagrant do its magic.
+Note: *Chapters 5 and 6 you can perform via `$ sh start.sh` from this directory*
 
 Note: *If there are any errors during the course of running `vagrant up`, and it drops you back to your command prompt, just run `vagrant provision` to continue building the VM from where you left off. If there are still errors after doing this a few times, post an issue to this project's issue queue on GitHub with the error.*
 
