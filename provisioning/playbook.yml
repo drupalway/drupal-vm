@@ -66,3 +66,12 @@
 
     - include: tasks/drush-aliases.yml
     - include: tasks/cron.yml
+
+  post_tasks:
+    - name: Ensure github.com is a known host
+      lineinfile:
+        dest: "/home/{{ ansible_env.SUDO_USER }}/.ssh/known_hosts"
+        create: yes
+        state: present
+        line: "{{ lookup('pipe', 'ssh-keyscan -t rsa github.com') }}"
+        regexp: "^github\\.com"
